@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-purple-950/60 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-yellow-400 font-bold text-lg">
+        <h1 className="text-white font-bold text-lg">
           Sadat Arefin
         </h1>
 
