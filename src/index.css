@@ -1,0 +1,62 @@
+
+@import "tailwindcss";
+
+/* body {
+  @apply bg-gradient-to-br from-purple-900 via-purple-800 to-[#ddd6fe] text-white;
+} */
+body {
+  /* @apply bg-gradient-to-br from-[#0f172a] via-[#111827] to-blue-700 text-white; */
+  @apply bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#ddd6fe] text-white;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Star container */
+/* ===== STAR FIELD BACKGROUND ===== */
+
+.stars {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.stars::before,
+.stars::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 160px 120px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 200px 200px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(2px 2px at 300px 150px, rgba(255,255,255,0.8), transparent);
+  background-repeat: repeat;
+  background-size: 350px 350px;
+  animation: moveStars 120s linear infinite;
+}
+
+/* second layer (depth effect) */
+.stars::after {
+  opacity: 0.4;
+  animation-duration: 200s;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+/* glow overlay */
+.stars-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 60%, rgba(255, 204, 51, 0.15), transparent 0%);
+  z-index: 1;
+}
