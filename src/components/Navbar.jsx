@@ -3,12 +3,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-purple-950/60 backdrop-blur-md z-50">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-white font-bold text-lg">
+      <div className="max-w-6xl mx-auto flex justify-center md:justify-between items-center p-4">
+        <h1 className=" hidden md:block  text-white font-bold text-lg">
           Sadat Arefin
         </h1>
 
-        <ul className="flex gap-6 text-sm">
+        <ul className="flex  gap-6 text-sm ">
           {menu.map((item) => (
             <li key={item}>
               <a
