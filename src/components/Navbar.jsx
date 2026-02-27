@@ -10,7 +10,7 @@ const Navbar = () => {
 
         <ul className="flex  gap-6 text-sm ">
           {menu.map((item) => (
-            <li key={item}>
+            <li className="cursor-pointer" key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
                 className="hover:text-pink-400 transition"
