@@ -1,6 +1,9 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 /* body {
   @apply bg-gradient-to-br from-purple-900 via-purple-800 to-[#ddd6fe] text-white;
 } */
@@ -8,9 +11,7 @@ body {
   /* @apply bg-gradient-to-br from-[#0f172a] via-[#111827] to-blue-700 text-white; */
   @apply bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#ddd6fe] text-white;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 /* Star container */
 /* ===== STAR FIELD BACKGROUND ===== */
 
