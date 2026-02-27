@@ -59,11 +59,12 @@ const categories = [
   "All",
   "React",
   "NextJs",
+  "Backend",
   "Agentic AI",
   "React Native",
   // "Flutter",
   "Animations",
-  "Backend"
+  
 ]
 
 const Projects = () => {
