@@ -1,19 +1,27 @@
 import profile from "../assets/profile.jpg";
-
+import { motion } from "framer-motion"
 const About = () => {
   return (
     <section id="about" className="min-h-screen py-24 max-w-7xl mx-auto px-6">
       
       {/* SECTION TITLE */}
-      <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+      {/* <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
         About Me
-      </h2>
-
+      </h2> */}
+<motion.h2
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
+  className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"
+>
+  About Me
+</motion.h2>
       {/* MAIN ABOUT GRID */}
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         
         {/* IMAGE */}
-        <div className="flex justify-center">
+        <div className="flex justify-center hover:scale-107 transition duration-500">
           <img
             src={profile}
             alt="profile"

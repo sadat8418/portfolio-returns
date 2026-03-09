@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa"
-
+import { motion } from "framer-motion"
 const Contact = () => {
   const form = useRef()
 
@@ -26,9 +26,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24 max-w-7xl mx-auto px-6">
-      <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+     
+     <motion.h2
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
+      className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
         Contact Me
-      </h2>
+      </motion.h2>
 
       <div className="grid md:grid-cols-3 gap-8">
 
