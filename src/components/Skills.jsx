@@ -31,7 +31,7 @@ const Skills = () => {
 
           <SkillBar name="Node.js" percent={85} />
           <SkillBar name="Express.js" percent={85} />
-          <SkillBar name="FastAPI" percent={80} />
+          <SkillBar name="FastAPI" percent={50} />
           <SkillBar name="MongoDB" percent={90} />
           <SkillBar name="PostgreSQL" percent={80} />
         </div>
@@ -43,7 +43,7 @@ const Skills = () => {
           </h3>
 
           <SkillBar name="React Native" percent={85} />
-          <SkillBar name="Flutter" percent={80} />
+          <SkillBar name="Flutter" percent={50} />
         </div>
 
         {/* TOOLS */}
@@ -54,7 +54,7 @@ const Skills = () => {
 
           <SkillBar name="Git & GitHub" percent={85} />
           <SkillBar name="Postman" percent={85} />
-          <SkillBar name="Figma" percent={75} />
+          <SkillBar name="Figma" percent={70} />
         </div>
 
       </div>
