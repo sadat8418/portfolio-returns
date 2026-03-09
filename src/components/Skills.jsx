@@ -5,7 +5,7 @@ const Skills = () => {
     
     <section id="skills" className="py-24 max-w-7xl mx-auto px-6">
      
-      <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+      <h2 className="py-2 text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
         Skills & Technologies
       </h2>
 
