@@ -2,13 +2,13 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const projectData = [
-  // {
-  //   id: 1,
-  //   title: " 🧠 AI Chatbot",
-  //   category: "NextJs",
-  //   description: " A chatbot built using NextJS and TypeScript\nTags: Ai, Chatbot, PDF summarizer, NextJS, TypeScript ",
-  //   link: "https://ai-bot89.vercel.app"
-  // },
+  {
+    id: 1,
+    title: " 🧠 Professional",
+    category: "React",
+    description: " A soothing professional website build with React\nTags: React, TailwindCSS, Professional design",
+    link: "https://wix2-react.vercel.app/"
+  },
   {
     id: 2,
     title: "📱 React Auth Website",
