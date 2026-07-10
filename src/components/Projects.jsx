@@ -52,6 +52,13 @@ const projectData = [
     link: "https://valo-bari.vercel.app",
      video: "https://drive.google.com/file/d/1BJ5n8PVvGvDcB8fu8t5hnAfkGjdfb6W7/view?usp=drive_link" 
   },
+  {
+    id: 8,
+    title: "🎯 GTD Productivity ",
+    category: "React",
+    description: " GTD(Get things done) model. Divide your daily & monthly tasks effectively. \nTags: Tags: React, Firebase, Google Sign in, TailwindCSS",
+    link: "https://gtd-map.vercel.app"
+  },
 
 ]
 
